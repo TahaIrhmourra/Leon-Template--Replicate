@@ -57,7 +57,7 @@ body {
 
     /* Phone Media Start */
 
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
         .special-heading {
             font-size: 60px;
         }
@@ -71,48 +71,39 @@ body {
         }
     }
 
-    @media (max-width: 1254px) {
+    @media (max-width: 1200px) {
         .services .services-content .image {
-            display: none;
+            display: none !important;
         }
     }
 
     /* Phone Media End */
 
-    /* Phones */
-    @media screen and (min-width: 576px) {
-        .container {
-            width: 80%;
-        }
-    }
+    /* Media Queries Start */
 
-    /* Tablets */
-    @media screen and (min-width: 768px) {
-        .container {
-            width: 80%;
-        }
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
     }
+}
 
-    /* Desktops */
-    @media screen and (min-width: 992px) {
-        .container {
-            width: 80%;
-        }
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
     }
+}
 
-    /* Large desktops */
-    @media screen and (min-width: 1200px) {
-        .container {
-            width: 80%;
-        }
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
     }
+}
 
-    /* larger desktops */
-    @media screen and (min-width: 1400px) {
-        .container {
-            width: 80%;
-        }
-    }
+/* Media Queries End */
+    
 
 /* Media Queries End */
 
@@ -259,6 +250,12 @@ body {
         grid-gap: 20px;
     }
 
+    /* @media (max-width: 992px) {
+        .features .container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    } */
+
     .features .feat {
         padding: 20px;
         text-align: center;
@@ -324,10 +321,12 @@ body {
     .services .services-content .image {
         text-align: center;
         position: relative;
+        display: inline-block;
     }
 
     .services .services-content .image img {
         width: 250px;
+
     }
 
     .services .services-content .image::before {
@@ -335,8 +334,9 @@ body {
         background-color: var(--secondary-color);
         width: 80px;
         position: absolute;
-        right: 30px;
-        top: -50px;
+        right: 0%;
+        top: -20%;
+        transform: translate(50%);
         height: 350px;
         z-index: -1;
     }
