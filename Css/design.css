@@ -49,8 +49,6 @@ body {
 .container {
     width: 80%;
     margin: auto;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
 /* Media Queries Start */
@@ -250,11 +248,11 @@ body {
         grid-gap: 20px;
     }
 
-    /* @media (max-width: 992px) {
-        .features .container {
-            grid-template-columns: repeat(2, 1fr);
-        }
-    } */
+    @media (max-width: 678px) {
+        .features .container { 
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        }  
+    }
 
     .features .feat {
         padding: 20px;
@@ -300,6 +298,12 @@ body {
     .services .services-content .srv {
         display: flex;
         margin-bottom: 40px;
+    }
+
+    @media (max-width: 768px) {
+        .services .services-content .srv {
+            text-align: center;
+        }
     }
 
     .services .services-content .srv i {
