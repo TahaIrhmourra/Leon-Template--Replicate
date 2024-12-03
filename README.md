@@ -1,2 +1,3 @@
-In this project (First one) i turned this psd into an html & css landing page 
---- PSD Link : https://www.graphberry.com/item/leon-psd-agency-template
+Done using the help of elzero web school css coures <br>
+ORIGINAL: https://elzerowebschool.github.io/HTML_And_CSS_Template_One/ <br>
+LIVE DEMO: https://tahairhmourra.github.io/Leon-Template--Replicate/ <br>
